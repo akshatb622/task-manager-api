@@ -17,10 +17,10 @@ The **Task-Manager-Api** with authentication support for different users. It pro
 
 # Technologies Used : 
 
-=> The app is primarily built on **NodeJS** which is used as the backend . **Express** is used to create the server.**Mongodb** is used as the database to store the data of different users and their tasks.<br>
-=> **JWT** is used to integrate the authentication service into the app.<br>
-=> **Sendgrid** is used to send auto generated emails to the users when they signup or delete their profile.<br>
-=> **Bcrypt** is used to hash the passwords provided by the users.<br>
+1) The app is primarily built on **NodeJS** which is used as the backend . **Express** is used to create the server.**Mongodb** is used as the database to store the data of different users and their tasks.<br>
+2) **JWT** is used to integrate the authentication service into the app.<br>
+3) **Sendgrid** is used to send auto generated emails to the users when they signup or delete their profile.<br>
+4) **Bcrypt** is used to hash the passwords provided by the users.<br>
 
 # Requirements : 
 
@@ -46,12 +46,12 @@ Clone the repo and install the dependencies.<br>
    iv) MONGODB_CONNECTION_STRING=mongodb://127.0.0.1:27017/task-manager-api <br>
    
 6) Save the file.<br>
-7) Open the file /src/emails/account.js and change the **from** property of all sgMail.send functions to the email-id registered on Sendgrid.com.<br> 
+7) Open the file /src/emails/account.js and set the **from** property of all sgMail.send functions to your email-id registered on Sendgrid.com.<br> 
 8) Save the File.<br>
 
 # Running the App : 
 Before following the steps below ensure that mongodb is running on your system.<br>
 1) To start the express server, run the following :<br> 
-   npm run start<br>
+   npm run dev<br>
 
-2) Open Postman and start sending requests to http://localhost:3000 and take a look around.
+2) Open Postman and start sending requests to http://localhost:3000 and see what you get.
