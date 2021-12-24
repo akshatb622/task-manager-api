@@ -42,8 +42,8 @@ Clone the repo and install the dependencies.<br>
 5) Now edit the dev.env file as : <br>
    i)   PORT=3000<br>
    ii)  SENDGRID_API_KEY=<Your api key that you got from step 3><br>
-   iii) MONGODB_CONNECTION_STRING=mongodb://127.0.0.1:27017/task-manager-api<br>
-   iv)  JWT_SECRET=Any text which should be your secret<br>
+   iii) MONGODB_CONNECTION_STRING=mongodb://127.0.0.1:27017/task-manager-api <br>
+   iv)  JWT_SECRET=<Any text which should be your secret> <br>
 6) Save the file.<br>
 7) Open the file /src/emails/account.js and change the **from** property of all sgMail.send functions to the email-id registered on Sendgrid.com.<br> 
 8) Save the File.<br>
